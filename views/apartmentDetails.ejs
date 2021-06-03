@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <title>Apartment Details</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aboutrow row ">
+                    <div class="col-md-1">
+                        <img class="homelogo" alt="Home Logo" src="img/placeholderlogo.png" />
+                    </div>
+                    <div class="col-md-7">
+                        <ul class="headerstyle">
+                            <li class="listyle">
+                                <a href="/home" class="headerlinks">Home</a>
+                            </li>
+                            <li class="listyle">
+                                <a href="/about" class="headerlinks">About</a>
+                            </li>
+                            <li class="listyle">
+                                <a href="/apartments" class="headerlinks">Apartments</a>
+                            </li>
+                            <li class="listyle">
+                                <a href="/forums" class="headerlinks">Forums</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="profileimage" alt="Profile logo" src="img/ppholder.png" />
+
+                        <div class="dropdown burgermenu">
+
+                            <img src="img/burgermenu.png" class="burgerclick" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <center>
+                                    <a class="dropdown-item" href="/profile">
+                                        <%-user.fname%>
+                                    </a>
+                                </center>
+                                <hr>
+                                <center><a class="dropdown-item" href="/logout">Log Out</a></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="mainpicholder">
+                                    <img class="mainaptpic" alt="Apartment Image 1" src="img/apholder.png" />
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <img class="secaptpic1" alt="Apartment Image 2" src="img/apholder.png" />
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="secaptpic2" alt="Apartment Image 3" src="img/apholder.png" />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="secaptpic3" alt="Apartment Image 4" src="img/apholder.png" />
+                                    </div>
+                                    <div class="aptstarholder">
+                                        <img class="aptstarsunder" alt="Star Rating" src="img/stars.png" />
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-7">
+                                <div class="aptdetailinfo">
+                                    <p class="aptdetailspace">
+                                        Address:
+                                        <%-app.city %>
+                                            <%-app.street %>
+                                                <%-app.baranggay %>
+                                    </p>
+                                    <p class="aptdetailspace">
+                                        Room type:
+                                        <%-app.type %>
+                                    </p>
+                                    <p class="aptdetailspace">
+                                        Capacity:
+                                        <%-app.capacity %>
+                                    </p>
+                                    <p class="aptdetailspace">
+                                        Person staying:
+                                        <%-app.city %>
+                                    </p>
+                                    <p class="aptdetailspace">
+                                        Restriction:
+                                        <%-app.restriction %>
+                                    </p>
+                                    <p class="aptdetailspace">
+                                        Price: Php
+                                        <%-app.price %>/ month
+                                    </p>
+                                    <p class="aptdetailspace">
+                                        Owner: <img class="aptdetailpic" src="img/ppholder.png"><br> Name:
+                                        <%-app.fname %>
+                                            <%-app.lname %><br> Contact:
+                                                <%-app.contact %><br> Email:
+                                                    <%-app.emailadd %><br>
+                                    </p>
+                                    <p class="aptdetailspace">
+                                        Description:
+                                    </p>
+                                    <p class="aptdetailspace">
+                                        "
+                                        <%-user.accUID %>"
+                                    </p>
+                                    <%var z=app.accountType; %>
+                                        <%if(z ==0){%>
+                                            <a href="/requestRent/<%-app.appID %>/<%-user.accUID %>">
+                                                <button type="button" class="aprentbutton">
+                                                    Rent
+                                                </button>
+                                            </a>
+                                            <% } %>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footerform">
+                    <div class="col-md-6 footerleft">
+                        <h3 class="footerquestion">
+                            Questions?
+                        </h3>
+                        <p class="footertext">
+                            If you have any questions or issues regarding the system,<br> please feel free to leave a message.
+                        </p>
+                        <p class="footertext">
+                            Your feedback is greatly appreciated
+                        </p>
+                    </div>
+                    <div class="col-md-6 ">
+                        <form role="form">
+                            <div class="form-group footerright">
+
+                                <label class="footerlabel" for="UserName">
+								Your Name
+							</label>
+                                <input type="text" class="formstyle" id="UserName" />
+                            </div>
+                            <div class="form-group footerright">
+                                <label class="footerlabel" for="UserEmail">
+								Your Email
+							</label>
+                                <input type="email" class="formstyle" id="UserEmail" />
+                            </div>
+                            <div class="form-group footerright">
+                                <label class="footerlabelMessage" for="UserMessage">
+								Message
+							</label>
+                                <input type="text" class="formstyle" id="UserMessage" />
+                            </div>
+                            <div class="footerright">
+                                <button type="submit" class="FooterButton">
+							Send
+						</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

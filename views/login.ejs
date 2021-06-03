@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Log-In</title>
+</head>
+
+<body style="background-color: black;">
+    <div class="container-fluid">
+        <div class="row" style="height: 1000px;">
+            <div class="col-md-2">
+            </div>
+            <div class="signdivpad col-md-8">
+                <div class="row">
+                    <div class="mainsigndiv col-md-6">
+                        <h3 class="logtitle">
+                            LOG IN
+                        </h3>
+                        <form class="Lformchange" role="form" method="POST" action="/login">
+                            <div class="form-group">
+
+                                <label class="signlabels" for="Email Address">
+								Email Address
+							</label>
+                                <input type="email" class="inputterstyleL form-control" name="email">
+                            </div>
+                            <div class="form-group">
+
+                                <label class="signlabels" for="Password">
+								Password
+							</label>
+                                <input type="password" class="inputterstyleL form-control" name="password">
+                            </div>
+
+                            <button type="submit" class="logbutt logbuttonstyle btn btn-light">
+							Sign-In
+						</button>
+                        </form>
+                    </div>
+                    <div style="padding-left: 30px;" class="signdiv col-md-6 ">
+
+                        <button style="font-weight: 900;" type="button" class="closebutt btn btn-light ">
+						X
+					</button><img alt="EZ Logo" class="logostyle" src="/img/placeholderlogo.png">
+                        <h3 class="logflavorstyle">
+                            Not Yet a Member?
+                        </h3>
+                        <a class="loghyperstyle" href="/signup">
+                            <u>Create an account here</u>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

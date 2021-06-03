@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="homerow row ">
+                    <div class="col-md-1">
+                        <img class="homelogo" alt="Bootstrap Image Preview" src="img/placeholderlogo.png" />
+                    </div>
+                    <div class="col-md-7">
+                        <ul class="headerstyle">
+                            <li class="listyle">
+                                <a href="/home" class="headerlinks">Home</a>
+                            </li>
+                            <li class="listyle">
+                                <a href="/about" class="headerlinks">About</a>
+                            </li>
+                            <li class="listyle">
+                                <a href="/apartments" class="headerlinks">Apartments</a>
+                            </li>
+                            <li class="listyle">
+                                <a href="/forums" class="headerlinks">Forums</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="profileimage" alt="Bootstrap Image Preview" src="img/ppholder.png" />
+
+                        <div class="dropdown burgermenu">
+
+                            <img src="img/burgermenu.png" class="burgerclick" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <center>
+                                    <a class="dropdown-item" href="/profile">
+                                        <%-user.fname%>
+                                    </a>
+                                </center>
+                                <hr>
+                                <center><a class="dropdown-item" href="/logout">Log Out</a></center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 logoholder">
+                            <img class="mainlogo" alt="Main Logo" src="img/placeholderimage.png" />
+                            <h3 class="flavoredtext">
+                                "Providing booking peace, with system ease"
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="easyholder">
+                            <h3 class="easylooking">
+                                Easy Looking,
+                            </h3>
+                            <h3 class="easybooking">
+                                Easy Booking.
+                            </h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 undereasy">
+                                <img class="underimage" alt="Apartment Searching Made Easy" src="img/placeholderimage.png" />
+                                <p class="undertext">
+                                    Apartment Searching Made Easy
+                                </p>
+                            </div>
+                            <div class="col-md-4 undereasy">
+                                <img class="underimage" alt="Book Whenever, Wherever" src="img/placeholderimage.png" />
+                                <p class="undertext">
+                                    Book Whenever, Wherever
+                                </p>
+                            </div>
+                            <div class="col-md-4 undereasy">
+                                <img class="underimage" alt="Forum Discussions" src="img/placeholderimage.png" />
+                                <p class="undertext">
+                                    Forum Discussions
+                                </p>
+                            </div>
+                        </div>
+                        <div class="learnbutt">
+                            <button type="button" class="underlearn">
+						Learn More
+					</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="featapp">
+                            Featured <br> Apartments
+                        </h3>
+
+                        <div class="row">
+                            <div class="col-md-4 underapp">
+                                <img class="apartmentpics" alt="Apartment Pictures" src="img/apholder.png" />
+                                <img class="starrating" alt="Star Rating" src="img/stars.png" />
+                                <p class="apdescription">
+                                    Address: Loren Ipsum <br> Reviews:
+                                    <i>"Lorem ipsum dolor sit amet"</i>
+                                </p>
+                            </div>
+                            <div class="col-md-4 underapp">
+                                <img class="apartmentpics" alt="Apartment Pictures" src="img/apholder.png" />
+                                <img class="starrating" alt="Star Rating" src="img/stars.png" />
+                                <p class="apdescription">
+                                    Address: Loren Ipsum <br> Reviews:
+                                    <i>"Lorem ipsum dolor sit amet"</i>
+                                </p>
+                                </p>
+                            </div>
+                            <div class="col-md-4 underapp">
+                                <img class="apartmentpics" alt="Apartment Pictures" src="img/apholder.png" />
+                                <img class="starrating" alt="Star Rating" src="img/stars.png" />
+                                <p class="apdescription">
+                                    Address: Loren Ipsum <br> Reviews:
+                                    <i>"Lorem ipsum dolor sit amet"</i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="learnbutt">
+                            <button type="button" class="underlearn	">
+						More Apartments
+					</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="featapp">
+                            Hear From Our <br> Frequent Users
+                        </h3>
+                        <div class="row">
+                            <div class="col-md-4 underapp">
+                                <img class="ppimagereview" alt="Profile Image" src="img/ppholder.png" class="rounded-circle" />
+                                <p class="webreview">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst.
+                                </p>
+                            </div>
+                            <div class="col-md-4 underapp">
+                                <img class="ppimagereview" alt="Profile Image" src="img/ppholder.png" class="rounded-circle" />
+                                <p class="webreview">
+                                    It is very nice. :)
+                                </p>
+                            </div>
+                            <div class="col-md-4 underapp">
+                                <img class="ppimagereview" alt="Profile Image" src="img/ppholder.png" class="rounded-circle" />
+                                <p class="webreview">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footerform">
+                    <div class="col-md-6 footerleft">
+                        <h3 class="footerquestion">
+                            Questions?
+                        </h3>
+                        <p class="footertext">
+                            If you have any questions or issues regarding the system,<br> please feel free to leave a message.
+                        </p>
+                        <p class="footertext">
+                            Your feedback is greatly appreciated
+                        </p>
+                    </div>
+                    <div class="col-md-6 ">
+                        <form role="form">
+                            <div class="form-group footerright">
+
+                                <label class="footerlabel" for="UserName">
+								Your Name
+							</label>
+                                <input type="text" class="formstyle" id="UserName" />
+                            </div>
+                            <div class="form-group footerright">
+                                <label class="footerlabel" for="UserEmail">
+								Your Email
+							</label>
+                                <input type="email" class="formstyle" id="UserEmail" />
+                            </div>
+                            <div class="form-group footerright">
+                                <label class="footerlabelMessage" for="UserMessage">
+								Message
+							</label>
+                                <input type="text" class="formstyle" id="UserMessage" />
+                            </div>
+                            <div class="footerright">
+                                <button type="submit" class="FooterButton">
+							Send
+						</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
